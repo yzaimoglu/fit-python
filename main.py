@@ -5,6 +5,7 @@ from subtraktion import Subtraktion
 from division import Division
 from multiplikation import Multiplikation
 from mittelwert import Mittelwert
+from summeliste import SummeListe
 from maximum import Maximum
 from minimum import Minimum
 from kreisumfang import Kreisumfang
@@ -50,6 +51,10 @@ while True:
                 multiplikation = Multiplikation()
                 multiplikation.input()
                 multiplikation.ergebnis()
+            case Rechenart.LISTE_SUMME:
+                summeliste = SummeListe()
+                summeliste.input()
+                summeliste.ergebnis()
             case Rechenart.LISTE_MITTELWERT:
                 mittelwert = Mittelwert()
                 mittelwert.input()
